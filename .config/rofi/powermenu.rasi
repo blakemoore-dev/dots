@@ -1,0 +1,89 @@
+configuration {
+	font: "Source Code Pro for Powerline medium 11";
+	show-icons: false;
+	icon-theme: 	"Papirus";
+	display-drun: "";
+	drun-display-format: "{name}";
+	disable-history: false;
+	fullscreen: false;
+	hide-scrollbar: true;
+	sidebar-mode: false;
+}
+
+@import "theme.rasi"
+
+window {
+	transparency: "real";
+	background-color: @transparent;
+	text-color: @snow-1;
+	border: 0px;
+	border-radius: 0px;
+	location: center;
+	anchor: center;
+}
+
+prompt {
+	enabled: false;
+}
+
+/* Text search bar */
+entry {
+	text-color: @snow-1;
+	expand: false;
+}
+
+listview {
+	background-color: @transparent;
+	columns: 1;
+	lines: 5;
+	cycle: true;
+	dynamic: true;
+	layout: vertical;
+	padding: 4px;
+	border-radius: 0px;
+	spacing: 4px;
+}
+
+mainbox {
+	background-color: @transparent;
+	border:	0px;
+	border-radius: 12px;
+	border-color:	@background-1;
+	children: [ listview ];
+}
+
+element {
+	background-color: @background-1;
+	text-color: @fg;
+	border: 4px;
+	border-color:	@grad-7;
+	// orientation: horizontal;
+	border-radius: 8px;
+	padding: 20px;
+	spacing: 10px;
+	text-color: @polar-4;
+}
+
+element selected {
+	background-color: @background-1;
+	text-color: @fg;
+	border: 4px;
+	border-color:	@grad-5;
+	// orientation: horizontal;
+	border-radius: 8px;
+	padding: 20px;
+	spacing: 10px;
+	text-color: @polar-4;
+}
+
+element-icon {
+	enabled: false;
+}
+
+element-text {
+	enabled: true;
+	expand: true;
+	horizontal-align: 0;
+	vertical-align: 0;
+	font: "Source Code Pro for Powerline medium 20";
+}
